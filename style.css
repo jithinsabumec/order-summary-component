@@ -78,6 +78,12 @@ a {
   font-size: 0.8rem;
 }
 
+a:hover {
+  color: hsl(224, 85%, 72%);
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
 .planwithprice {
   padding: 0 3rem 0 1.3rem;
 }
@@ -92,13 +98,25 @@ a {
   border-radius: 8px;
   -webkit-box-shadow: 2px 15px 29px 3px rgba(22, 16, 255, 0.19);
   box-shadow: 2px 15px 29px 3px rgba(22, 16, 255, 0.19);
+  cursor: pointer;
 }
 
 .cancel {
   border: none;
   background-color: transparent;
-  font-weight: 700;
+  font-weight: 900;
   color: #60646d;
   margin-top: 0.3rem;
   margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.proceed:hover {
+  background-color: hsl(224, 85%, 72%);
+  transition: 0.15s ease;
+}
+
+.cancel:hover {
+  transition: 0.15s ease;
+  color: rgb(40, 40, 40);
 }
